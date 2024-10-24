@@ -5,32 +5,32 @@ export async function up() {
     {
       question: 'What is the capital of Singapore?',
       region: 'SG',
-      cycle: 2024,
+      cycle: 297,
     },
     {
       question: 'What is the capital of Malaysia?',
       region: 'MY',
-      cycle: 2024,
+      cycle: 300,
     },
     {
       question: 'What is the capital of Indonesia?',
       region: 'ID',
-      cycle: 2024,
+      cycle: 295,
     },
     {
       question: 'What is the capital of Singapore?',
       region: 'SG',
-      cycle: 2025,
+      cycle: 280,
     },
     {
       question: 'What is the capital of Malaysia?',
       region: 'MY',
-      cycle: 2025,
+      cycle: 299,
     },
     {
       question: 'What is the capital of Indonesia?',
       region: 'ID',
-      cycle: 2025,
+      cycle: 298,
     },
   ]);
 }

@@ -3,6 +3,7 @@ import {
   CommandLineChoiceParameter,
   CommandLineStringParameter,
 } from '@rushstack/ts-command-line';
+import { connectDB } from '../../utils/mongoose';
 import {
   listMigrationHistories,
   listSeeders,
@@ -46,7 +47,6 @@ export class MigratorCli extends CommandLineAction {
   }
 
   protected async onExecute() {
-    const { connectDB } = await import('../../utils/mongoose');
     const db = await connectDB();
 
     const histories = await listMigrationHistories();

@@ -9,6 +9,8 @@ const envSchema = z.object({
   MONGODB_DATABASE: z.string(),
   MONGODB_USER: z.string(),
   MONGODB_PASSWORD: z.string(),
+  REDIS_PORT: z.coerce.number().default(6379),
+  REDIS_HOST: z.string().default('localhost'),
 
   CYCLE_DURATION: z.coerce.number(),
   CYCLE_UNIT: z.enum([
