@@ -60,3 +60,14 @@ pnpm run dev # or npm run dev, we recommend to use pnpm
 1. If the data pre-feteched/pre-loaded is large, we can run out of memory.
 
 2. If we want to change the `cycle start date`, `cycle duration` or `cycle unit` in the future, we have to restart the server.
+
+
+## Improvements
+
+1. Deploy each server to each region so we can reduce the latency.
+
+2. By deploying for each region, we reduce the memory usage for the pre-fetched/pre-loaded questions in `Redis` since we can set which region question need to be deployed for each server.
+
+3. Change `express` to other framework like `Hono` or `NestJS`.
+
+4. Implement caching on the user device by giving information the TTL for the fetched questions, therefore reducing API calls.
